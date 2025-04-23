@@ -20,27 +20,29 @@ This pipeline operates in five main stages:
    ```
 
 2. **Fix variables**
+   '''bash
     Api key
     region player name #
     time zone
-3. **Start services**
+   '''
+4. **Start services**
    ```bash
    # Zookeeper & Kafka
    zookeeper-server-start.sh config/zookeeper.properties
    kafka-server-start.sh config/server.properties
    ```
 
-4. **Start Spark Structured Streaming**
+5. **Start Spark Structured Streaming**
    ```bash
    spark-submit spark_streaming.py
    ```
 
-5. **Launch data tracker**
+6. **Launch data tracker**
    ```bash
    python main.py
    ```
 
-6. **Run dashboard**
+7. **Run dashboard**
    ```bash
    streamlit run streamlit_app.py
    ```
