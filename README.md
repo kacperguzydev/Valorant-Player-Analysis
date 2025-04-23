@@ -20,11 +20,11 @@ This pipeline operates in five main stages:
    ```
 
 2. **Fix variables**
-   '''bash
+   ```bash
     Api key
     region player name #
     time zone
-   '''
+   ```
 4. **Start services**
    ```bash
    # Zookeeper & Kafka
