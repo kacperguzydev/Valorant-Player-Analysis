@@ -19,16 +19,11 @@ This pipeline operates in five main stages:
    pip install -r requirements.txt
    ```
 
-2. **Configure environment**
-   - Copy `.env.example` to `.env` and fill in:
-     ```bash
-     cp .env.example .env
-     ```
-   - Set your:
-     - `POSTGRES_*` variables
-     - `RIOT_*` variables
-     - `KAFKA_BROKER` and `KAFKA_TOPIC`
-
+2. **Fix variables**
+    ```Api key
+    region player name #
+    time zone
+    '''
 3. **Start services**
    ```bash
    # Zookeeper & Kafka
